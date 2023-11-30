@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="FC Barcelona Fans" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="barca.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <script src="script.js" defer></script>
+
+    <!--This is used used as a helper function -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('form[name="myForm"]').addEventListener('submit', function(e) {
+          e.preventDefault(); // prevent form submission
+          complain();
+        });
+      });
+    </script>
+  </head>
+  
+  <body class="contactBg">
+
+    <!--nav menu in header-->
+    <header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="subnav">
+          <button class="subnavbtn">Club  <img width="15px" height="15px" src="down-chevron.png">
+          </button>
+          <div class="subnav-content">
+           
+            <div class="subnav">
+              <button class="subnavbtn">Team <img width="15px" height="15px" src="down-chevron.png">
+              </button>
+              <div class="subnav-content">
+                <a href="menFteam.html">Men First Team</a>
+                <a href="barcaStaff.html">Barcelona Staff</a>
+              </div>
+            </div>
+            <a href="kits.html">Team Kits</a>
+            <a href="rivalTeams.html" >Rival Teams</a>
+            
+          </div>
+        </div>
+        <a href="contact.html" class="active">Contact</a>
+        <a id = "loginSet" href="login.html"></a>
+        <img class="logoStyle" src="barca.png" alt="barca">
+      </nav>
+    </header>
+
+    <!--This section is used to display the data-->
+    <section>
+      <h1>Contact us via the following methods</h1>
+      <ul>
+        <li>Telephone no: +201558447373</li>
+        <li> Emails <ul>
+            <li>
+              <details>
+                <summary>Work Emails</summary>
+                <ol>
+                  <li>
+                    <a href="mailto:20P4198@eng.asu.edu.eg">20P4198@eng.asu.edu</a>
+                  </li>
+                  <li>
+                    <a href="mailto:mina.george.girgis@gmail.com">mina.george.girgis@gmail.com</a>
+                  </li>
+                </ol>
+              </details>
+            </li>
+            <li>
+              <a href="mailto:captsaso@gmail.com">captsaso@gmail.com</a>
+            </li>
+          </ul>
+          </details>
+        </li>
+        <li id="showMore" style="list-style-type: none;"></li>
+        <li id="showMore2" style="list-style-type: none;"></li>
+        <button type="button" onclick="showMore()" style="width:fit-content" ; class="buttonClass">Show more info</button>
+      </ul>
+    </section>
+    <aside class="fixed">
+      <!--Testing HTML form textarea-->
+      <form name="myForm" onsubmit="complain();" method="get" style="text-align: center;">
+        <fieldset>
+          <legend style="color: #ffffff;">
+            <b>Any complains? please submit..</b>
+          </legend>
+          <textarea placeholder="Write your complain here." name="message" id="complain" rows="10" cols="30"></textarea>
+          <br>
+          <input type="submit" value="submit" style="background-color:#e52165; color: white; width: 80px;">
+          <br>
+          <input type="reset" value="reset" </fieldset>
+      </form>
+    </aside>
+    <footer>
+      <marquee direction="right"> FC Barcelona Fans &copy;</marquee>
+    </footer>
+  </body>
+</html>

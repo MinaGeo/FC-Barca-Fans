@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="FC Barcelona Fans" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="barca.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </style>
+  </head>
+  
+  <body>
+
+    <nav>
+      <a href="login.html" class="active">Login</a>
+      <a href="signup.html">Signup</a>
+      <img class="logoStyle" src="barca.png" alt="barca">
+    </nav>
+
+
+
+    <!--Testing HTML form text-->
+    <div>
+      <h1>Login</h1>
+      <form name="myForm" onsubmit="login(); return false;" method="get">
+        <label for="usernameLogin">Username: </label>
+        <br>
+        <input type="text" id="usernameLogin" name="username" placeholder="username" required>
+        <br>
+        <label for="passwordLogin">Password: </label>
+        <br>
+        <input type="password" id="passwordLogin" name="password" placeholder="password" required minlength="8">
+        <br>
+        <br>
+        <input type="submit" value="Login" class="buttonClass" onclick="setName()">
+        <input type="reset" value="Reset" class="buttonClass">
+        <br>
+      </form>
+    </div>
+    <h2 style="text-align: center;">Don't have an account? click here to sign up.. <button type="button" class="buttonClass" onclick="goToSignUp()">Sign up</button>
+    </h2>
+    <article class="signArticle">
+      <h3 class="signUpDetails" id="signUpData"></h3>
+    </article>
+    <footer>
+      <marquee direction="right"> FC Barcelona Fans &copy;</marquee>
+    </footer>
+  </body>
+</html>

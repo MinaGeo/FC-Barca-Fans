@@ -1,0 +1,339 @@
+
+/*Headers*/
+h1 {color: white; text-align: center; text-decoration-line:underline; text-decoration-color: #e52165;}
+.infoClass {color: white; text-align: center; font-size: large; text-align: justify;}
+/*Body*/
+body{background-color: #0d1137;
+    color: #e52165;}
+
+form {text-align: center;}
+label {color:#e52165;}
+input.buttonClass{background-color:#e52165; color: white; width: 80px;}
+
+title{font-family: 'Times New Roman', Times, serif;}
+
+
+
+/*************************88*/
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/**********************************/
+
+
+footer {position: fixed;
+bottom: 0;
+width: 99%;
+padding: 1px;}
+
+
+.subnav .subnavbtn {
+  border: none;
+  color: white;
+  background-color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #5d1a4d;
+  width: fit-content;
+  z-index: 1;
+}
+.subnav .subnav-content .subnav .subnavbtn {
+  border: none;
+  color: white;
+  background-color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+.subnav .subnav-content .subnav .subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #5d1a4d;
+  width: fit-content;
+  z-index: 1;
+}
+.subnav:hover .subnav-content {
+  display: block;
+  padding: 5px;
+    border-radius: 8px;
+    margin: 11px;;
+  background: linear-gradient(to left, #e52165, #0d1137);
+}
+
+.subnav:hover .subnav-content:hover .subnav:hover .subnav-content{
+  display: block;
+  padding: 5px;
+    border-radius: 8px;
+    margin: 11px;;
+  background: linear-gradient(to left, #e52165, #0d1137);
+}
+
+
+
+
+nav {
+    background: linear-gradient(to right, #e52165, #0d1137);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px;
+    display: flex;
+    
+  }
+  
+  /* Style the navigation links */
+  nav a, nav div{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  /* Change color on hover */
+  nav a:hover, .subnav:hover, .subnav:hover .subnav-content {
+    background-color: #0d1137;
+  }
+  
+  /* Style for the active link */
+  nav .active {
+    background-color: #5d1a4d;
+  }
+  
+  /* Change color on hover */
+  nav select:hover, nav details:hover {
+    background-color: #0d1137;
+  }
+
+aside nav iframe {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: none;
+  }
+  
+  aside nav:hover iframe{
+    display: inline-block;
+  }
+  
+  /* Style for the active link */
+
+/*Extra*/
+marquee {width: 100%;
+    background-color: #e52165;
+font-size: small;
+font-family: 'Times New Roman', Times, serif;
+color: white;
+
+}
+
+.devInfoClass{ background: linear-gradient(to top, #e52165, #0d1137);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px;}
+
+#imageFormat {background-color: linear-gradient(to top, #e52165, #0d1137);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px;}
+
+.buttonClass {
+  background-color:#e52165; color: white; width: 80px;
+}
+
+.signUpDetails {
+  font-size: xx-large;
+  text-decoration: underline;
+  text-align: center;
+}
+
+    /* Center the content horizontally and add some spacing */
+
+
+  /* Style the container div */
+  .team-container {
+    display: flex; /* Use flexbox for layout */
+      text-align: center;
+      background: linear-gradient(to top, #e52165, #0d1137);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* Style each player item within the container */
+.team-item {
+    flex: 1; /* Distribute available space equally among items */
+    margin: 0 10px; /* Add spacing between items */
+}
+
+/* Style the heading */
+.team-item p {
+  color: white;
+  font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the image */
+.team-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+
+  /* Style the container div */
+  .player-container {
+    display: flex; /* Use flexbox for layout */
+      text-align: center;
+      background: linear-gradient(to top, #e52165, #0d1137);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* Style each player item within the container */
+.player-item {
+    flex: 1; /* Distribute available space equally among items */
+    margin: 0 10px; /* Add spacing between items */
+}
+
+/* Style the heading */
+.player-item h2 {
+  color: white;
+  font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the image */
+.player-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/************aside**************/
+aside {
+margin-left: 16px;
+background: linear-gradient(to top, #e52165, #0d1137);
+float: right;
+width: 25%;
+padding: 6px;
+top: 100px;
+right: 0;
+position: fixed;
+}
+
+
+.signArticle {
+  
+  margin-left: 16px;
+  width: 25%;
+  padding: 6px;
+  top: 100px;
+  position: fixed;
+  }
+
+  .logoStyle {
+  
+    margin-left: 16px;
+    margin-right: 20px;
+    float: right;
+    width: 3.5%;
+    padding: 6px;
+    top: 17px;
+    right: 0;
+    position: fixed;
+    }
+
+/************LISTS**************/
+ul {
+  list-style-type: circle;
+  padding: 0;
+  font-size: larger;
+  margin: 20px;
+}
+li {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+li:hover {
+  background-color: #5d1a4d;
+  width: fit-content;
+}
+  
+/***************tables*************/
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; 
+    border-style: dashed;
+}
+thead tr {
+  font-size: x-large;
+}
+tr{
+    text-align: center;
+}
+th, td {
+    padding: 15px;
+}
+th {color: rgba(0, 0, 120, 0.668);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+td {color: white;}
+table {width: 70%; 
+  margin-left: 250px;
+background: linear-gradient(to top, #5d1137, #e52165,#e55165);
+text-align: center;}
+
+.buttonClass:hover{
+  background-color: #5d1a4d;
+}
+
+.sectionStyle
+{
+  margin-left: 90px; text-align: center;
+
+}
+
+.homeH1 {
+ font-size: large;
+  color:  #e52165;
+}
+.contactBg {
+  /* Set the background image URL */
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-color: inherit;
+}
+
+
+.centered-fieldset {
+  width: 20%;
+  border-color: #e52165;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.centered-fieldset legend {
+  color: #ffffff;
+}

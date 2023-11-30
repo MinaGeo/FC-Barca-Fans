@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="FC Barcelona Fans" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="barca.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+      <!--nav menu in header-->
+      <header>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <div class="subnav">
+            <button class="subnavbtn">Club  <img width="15px" height="15px" src="down-chevron.png">
+            </button>
+            <div class="subnav-content">
+             
+              <div class="subnav">
+                <button class="subnavbtn">Team <img width="15px" height="15px" src="down-chevron.png">
+                </button>
+                <div class="subnav-content">
+                  <a href="menFteam.html">Men First Team</a>
+                  <a href="barcaStaff.html" >Barcelona Staff</a>
+                </div>
+              </div>
+              <a href="kits.html">Team Kits</a>
+              <a href="rivalTeams.html" >Rival Teams</a>
+              
+            </div>
+          </div>
+          <a href="contact.html">Contact</a>
+          <a id = "loginSet" href="login.html"></a>
+          <img class="logoStyle" src="barca.png" alt="barca">
+        </nav>
+      </header>
+
+    <!-- This used to choose the information we want to display-->
+    <section>
+      <h1>This is Mina's FC official website where you get to know more details about the team and the creator</h1>
+      <p>Please choose the information you want to display...</p>
+      <form name="radioForm" onclick="teamInfo(this)" method="get" style="text-align: center;">
+        <input type="radio" id="owner" name="radioForm" value="owner">
+        <label for="owner">Owner</label>
+        <input type="radio" id="team" name="radioForm" value="team">
+        <label for="team">Team</label>
+      </form>
+      <div id="displayInfo" class="devInfoClass"></div>
+    </section>
+
+    <!--This footer is used to display website name-->
+    <footer>
+      <marquee direction="right"> FC Barcelona Fans &copy;</marquee>
+    </footer>
+  </body>
+</html>

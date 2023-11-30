@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="FC Barcelona Fans" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="barca.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <script src="script.js"></script>
+    <title>Home</title>
+  </head>
+  
+  <body onload="getName()">
+
+    <!--This header is used for the navigation bar-->
+    <header>
+      <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <div class="subnav">
+          <button class="subnavbtn">Club  <img width="15px" height="15px" src="down-chevron.png">
+          </button>
+          <div class="subnav-content">
+           
+            <div class="subnav">
+              <button class="subnavbtn">Team <img width="15px" height="15px" src="down-chevron.png">
+              </button>
+              <div class="subnav-content">
+                <a href="menFteam.html">Men First Team</a>
+                <a href="barcaStaff.html">Barcelona Staff</a>
+              </div>
+            </div>
+            <a href="kits.html">Team Kits</a>
+            <a href="rivalTeams.html">Rival Teams</a>
+            
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a id = "loginSet" href="login.html"></a>
+        <img class="logoStyle" src="barca.png" alt="barca">
+      </nav>
+    </header>
+
+    <h1 id="homeHeader">Hello</h1>
+    <h2>You can view many stuff in this website, such as the team's players, the team's kits & more!</h2>
+
+    <!--This is used to display a table-->
+    <section>
+      <table >
+        <caption>
+          <h1 style="font-size: large;">Major FC Barcelona Trophies List</h1>
+        </caption>
+        <thead>
+          <tr >
+            <th id="tableFont">Trophy name</th>
+            <th>Last time achieved</th>
+            <th>Amount of time achieved</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Champions League</td>
+            <td>2015</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>La liga</td>
+            <td>2022-2023</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>Copa Del Rey</td>
+            <td>2020-2021</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <td>Supercopa de España</td>
+            <td>2022-2023</td>
+            <td>14</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="2">Total Trophies</td>
+          <td>77</td>
+        </tfoot>
+      </table>
+    </section>
+
+    <br>
+
+    <!--This used to display a video-->
+    <section class="sectionStyle">
+      <h1 class="homeH1">View videos of FC Barcelona...</h1>
+      <button class="buttonClass" style="width: fit-content;" onclick="changeVideo()">Change Video</button>
+      <br>
+      <video id="barcaVideo" width="75%" controls muted>
+        <source src="messiGoal.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <footer>
+      <marquee direction="right"> FC Barcelona Fans &copy;</marquee>
+    </footer>
+  </body>
+</html>

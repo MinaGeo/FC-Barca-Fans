@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="barca.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </style>
+  </head>
+  
+  <body>
+
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="signup.html" class="active">Signup</a>
+      <img class="logoStyle" src="barca.png" alt="barca">
+    </nav>
+
+    <article class="signArticle">
+      <h3 class="signUpDetails" id="signUpData"></h3>
+    </article>
+
+    <h2 style="text-align: center;">Don't have an account? sign up here..</h2>
+
+    <div>
+      <h1>Sign up</h1>
+      <form name="myForm" onsubmit="signUp(); return false;">
+        <label for="fullNameSignUp">Full Name:</label>
+        <br>
+        <input type="text" id="fullNameSignUp" name="fullName" placeholder="Full Name" required>
+        <br>
+        <label for="usernameSignUp">Username:</label>
+        <br>
+        <input type="text" id="usernameSignUp" name="username" placeholder="Username" required>
+        <br>
+        <label for="passwordSignUp">Password:</label>
+        <br>
+        <input type="password" id="passwordSignUp" name="password" placeholder="Password" required minlength="8">
+        <br>
+        <br>
+        <input type="submit" value="Sign up" class="buttonClass">
+        <input type="reset" value="Reset" class="buttonClass">
+        <br>
+      </form>
+    </div>
+  
+    <h2 style="text-align: center;">Already have an account? click here to login.. <button type="button" class="buttonClass" onclick="goToLogin()">Login</button>
+    </h2>
+    
+    <footer>
+      <marquee direction="right"> FC Barcelona Fans &copy;</marquee>
+    </footer>
+    
+  </body>
+</html>

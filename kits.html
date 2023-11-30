@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="FC Barcelona Fans" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <link rel="icon" href="barca.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    
+    <!--This is used to send the the chosen item for the kit-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('form[name="myForm"]').addEventListener('submit', function(e) {
+          e.preventDefault(); // prevent form submission
+          getKit();
+        });
+      });
+    </script>
+
+    <title>Team kits</title>
+  </head>
+
+  <body>
+    
+    <header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="subnav">
+          <button class="subnavbtn">Club  <img width="15px" height="15px" src="down-chevron.png">
+          </button>
+          <div class="subnav-content">
+           
+            <div class="subnav">
+              <button class="subnavbtn">Team <img width="15px" height="15px" src="down-chevron.png">
+              </button>
+              <div class="subnav-content">
+                <a href="menFteam.html">Men First Team</a>
+                <a href="barcaStaff.html">Barcelona Staff</a>
+              </div>
+            </div>
+            <a href="kits.html"  class="active">Team Kits</a>
+            <a href="rivalTeams.html">Rival Teams</a>
+            
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a id = "loginSet" href="login.html"></a>
+        <img class="logoStyle" src="barca.png" alt="barca">
+      </nav>
+    </header>
+
+    <!--Choosing which kit to choose-->
+    <h1>Choose the kits you want to view</h1>
+    <form name="myForm" style="text-align: center;">
+      <fieldset class="centered-fieldset">
+        <legend>
+          <b>Select Kits</b>
+        </legend>
+        <label for="kits">Choosing a kit </label>
+        <br>
+        <select id="kits" name="kits">
+          <option value="mainKit" selected>Main Kit</option>
+          <option value="secondKit">Second Kit</option>
+          <option value="thirdKit">Third Kit</option>
+        </select>
+        <input type="submit" value="Submit" class="buttonClass">
+        <input type="reset" value="Reset" class="buttonClass">
+        <br>
+      </fieldset>
+    </form>
+    <section>
+
+      <!--Display chosen kit-->
+      <article>
+        <h1 style="font-size: xx-large;">Choosen kit</h1>
+        <div id="divKit" class="player-container">
+          <div class="player-item">
+            <h2 id="kitHead" hidden></h2>
+            <img id="choosenKit" width="300px" height="300px" alt="stegen" hidden>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!--This footer is used to display website name-->
+    <footer>
+      <marquee direction="right"> FC Barcelona Fans &copy;</marquee>
+    </footer>
+  </body>
+</html>

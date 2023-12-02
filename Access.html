@@ -13,8 +13,8 @@
   <body>
 
     <nav>
-      <a href="home.html">Home</a>
-      <a href="Access.html" class="active">Login/Signup</a>
+      <a href="intro.html">Welcome</a>
+      <a href="access.html" class="active">Login/Signup</a>
 
       <img class="logoStyle" src="barca.png" alt="barca">
     </nav>
@@ -29,7 +29,7 @@
     <!--Testing HTML form text-->
     <div id="loginBox">
       <h1>Login</h1>
-      <form name="myForm" onsubmit="login(); return false;" method="get">
+      <form name="myForm" action="home.html" method="post">
         <label for="usernameLogin">Username: </label>
         <br>
         <input type="text" id="usernameLogin" name="username" placeholder="username" required>

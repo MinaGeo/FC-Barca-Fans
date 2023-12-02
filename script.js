@@ -1,5 +1,5 @@
 const usersArray = [];
-
+/* Removed These functions so that the user aren't force to sign up and login */
 function login()
 {
     
@@ -20,8 +20,8 @@ function login()
                 userflag = true;
                 break;
             }
+           
         }
-
     
         if (userflag) {
             window.location.href = "home.html";
@@ -38,7 +38,7 @@ function login()
 }
 
 
-
+/* Removed These functions so that the user aren't force to sign up and login */
 function signUp()
 {
     var fullName = document.getElementById("fullNameSignUp").value.trim();
@@ -190,5 +190,17 @@ function changeColor()
 function changeFont()
 {
     document.getElementById("colorChange").style.fontSize="larger";
+}
+
+function goToLogin()
+{
+    window.location.href = "access.html";
+
+}
+
+function goToIntro()
+{
+    window.location.href = "intro.html";
+
 }
 

@@ -95,7 +95,69 @@ nav {
     
   }
   
-  /* Style the navigation links */
+
+
+  #divBox {
+    width: 440px; /* Set the desired width */
+    height: 370px;
+    margin: 20px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    background: linear-gradient(to bottom, #e52165, #0d1137);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+    }
+   
+    input[type="text"],
+    input[type="password"] {
+      width: 70%; /* Make text boxes 100% width */
+      padding: 4px; /* Adjust padding as needed */
+      box-sizing: border-box;
+    }
+
+    /* Custom colors for text boxes and password boxes */
+    input[type="text"] {
+      background-color: #ffffff; /* Set your desired background color */
+
+      border: 1px solid #000000; /* Set your desired border color */
+    }
+
+    input[type="password"] {
+      background-color: #f5f5f5; /* Set your desired background color */
+      border: 1px solid #ddd; /* Set your desired border color */
+    }
+
+
+    #form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Adjust as needed */
+    }
+  
+    .sign_login_h3_style {
+      text-align: center; color: aliceblue;
+    }
+  #loginBox {
+    width: 440px; /* Set the desired width */
+    height: 370px;
+    margin: 20px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    background: linear-gradient(to bottom, #e52165, #0d1137);
+    text-align: center;
+    }
+      /* Style the navigation links */
   nav a, nav div{
     color: white;
     text-decoration: none;
@@ -151,7 +213,13 @@ color: white;
   margin: 20px;}
 
 .buttonClass {
-  background-color:#e52165; color: white; width: 80px;
+  background-color:#e52165; color: white; width: 150px;
+  height: 30px;
+  margin: 10px;
+}
+.buttonClass:hover{
+  background-color: #5d1a4d;
+
 }
 
 .signUpDetails {
@@ -304,9 +372,7 @@ table {width: 70%;
 background: linear-gradient(to top, #5d1137, #e52165,#e55165);
 text-align: center;}
 
-.buttonClass:hover{
-  background-color: #5d1a4d;
-}
+
 
 .sectionStyle
 {

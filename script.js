@@ -1,5 +1,4 @@
 const usersArray = [];
-localStorage.login = false;
 
 function login()
 {
@@ -25,11 +24,10 @@ function login()
 
     
         if (userflag) {
-            localStorage.login = true;
             window.location.href = "home.html";
             console.log("Existing users:", myArray);
         } else {
-            localStorage.login = false;
+            
             document.getElementById("signUpData").innerHTML = "Invalid data. please sign up";
         }
     }
@@ -95,15 +93,14 @@ function getName()
      const storedArray = localStorage.getItem('usersArray');
 
         // Check if there is data
-    if (localStorage.login==true) {
+    if (storedArray!= null) {
         document.getElementById('homeHeader').innerHTML = "Welcome "+localStorage.name+" to the official FC Mina Website!"
-    document.getElementById('loginSet').innerHTML = "Logout";
     }
-    else {
+    else{
     document.getElementById('homeHeader').innerHTML = "Welcome "+"Fan"+" to the official FC Mina Website!";
-    document.getElementById('loginSet').innerHTML = "Login";
     }
 
+    localStorage.clear();
   
 
 }
@@ -177,20 +174,21 @@ function getKit() {
 } 
 
 
-function goToSignUp() {
-            window.location.href = 'signup.html';
-
-}
-
-function goToLogin() {
-    window.location.href = 'login.html';
-}
-
 function showMore()
 {
     document.getElementById("showMore").style.listStyleType = "circle";
     document.getElementById("showMore").innerHTML = "LinkedIn account: <a href='https://www.linkedin.com/in/mina-george-0131b5231'>Mina George</a>";
     document.getElementById("showMore2").style.listStyleType = "circle";
     document.getElementById("showMore2").innerHTML = "Adress: Makram Ebied - Nasr City - Cairo - Egypt";
+}
+
+function changeColor()
+{
+    document.getElementById("colorChange").style.color="#FFFFFF";
+}
+
+function changeFont()
+{
+    document.getElementById("colorChange").style.fontSize="larger";
 }
 
